@@ -1,7 +1,23 @@
-pip install notebook
-pip install -U scikit-learn
+# Installation Instructions
+
+# Create a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Linux/Mac
+# or
+.\venv\Scripts\activate  # On Windows
+
+# Install required packages
+pip install scikit-learn
 pip install numpy
 pip install pandas
-pip install pyqt5
-pip install pillow (incase image processing is needed)
-pip install 
+pip install matplotlib
+pip install seaborn
+pip install imbalanced-learn  # for SMOTE
+pip install python-dotenv
+pip install notebook  # if you want to use Jupyter notebooks
+pip install pyqt5  # for GUI
+pip install pillow  # for image processing
+
+# Note: Make sure you have the following data files in the data/ directory:
+# - diabetic_data.csv
+# - IDs_mapping.csv 
